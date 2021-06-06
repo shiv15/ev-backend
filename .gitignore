@@ -6,3 +6,6 @@ jspm_packages
 .serverless
 dev.yml
 serverless.yml
+.DS_Store
+launch.json
+.vscode
