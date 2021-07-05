@@ -1,0 +1,5 @@
+INSTANCE_URL: "xxxxxxxxx"
+INSTANCE_USERNAME: "xxxxx"
+INSTANCE_PASSWORD: "xxxxxx"
+INSTANCE_SCHEMA: "xxxxxx" 
+SECRET: "xxxxxxx"

@@ -2,10 +2,10 @@
 node_modules
 jspm_packages
 
+
 # Serverless directories
 .serverless
 dev.yml
-serverless.yml
 .DS_Store
 launch.json
 .vscode
