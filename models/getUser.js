@@ -1,8 +1,8 @@
-const dbmodels = require('../DB/models');
+const { models } = require('../DB');
 
 
 module.exports = (authCode) => {
-    return Promise.resolve(dbmodels.Customers.findAll({
+    return Promise.resolve(models.customers.findAll({
         where: {
           secret: authCode
         }

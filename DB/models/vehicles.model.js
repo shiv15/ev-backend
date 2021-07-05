@@ -1,30 +1,9 @@
+
 const { DataTypes } = require('sequelize');
-const db = require("./db");
 
-const Customers = db.define('customers', {
+module.exports = (db) => {
 
-    customer_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true
-    },
-    name: {
-        type: DataTypes.STRING
-    },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    secret: {
-        type: DataTypes.STRING
-    },
-    isPaid: {
-        type: DataTypes.TINYINT
-    }
-});
-
-const Vehicles = db.define('vehicles', {
+ db.define('vehicles', {
     vehicle_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -89,5 +68,4 @@ const Vehicles = db.define('vehicles', {
         type: DataTypes.TEXT
     }
 });
-
-module.exports = { Customers, Vehicles }
+}

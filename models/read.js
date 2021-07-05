@@ -3,11 +3,11 @@
 
 
 
-const dbmodels = require('../DB/models');
+const { models } = require('../DB');
 
 
 module.exports = (authCode) => {
-    return Promise.resolve(dbmodels.Vehicles.findAll());
+    return Promise.resolve(models.vehicles.findAll());
 }
 
 
