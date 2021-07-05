@@ -42,7 +42,6 @@ module.exports.getData = async (event, context, callback) => {
 
 
 module.exports.createCustomer = async (event, context, callback) => {
-  console.log(typeof event.body);
   const customer = await createCustomer(JSON.parse(event.body))
   callback(null, {
     secret: customer.secret,
