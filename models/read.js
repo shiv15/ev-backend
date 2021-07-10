@@ -1,8 +1,3 @@
-
-// const DBCall = require('./requestDB');
-
-
-
 const { models } = require('../DB');
 
 
