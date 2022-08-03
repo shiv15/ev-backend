@@ -19,7 +19,7 @@ module.exports = (db) => {
         secret: {
             type: DataTypes.STRING
         },
-        isPaid: {
+        premium: {
             type: DataTypes.TINYINT
         }
     });

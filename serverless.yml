@@ -26,11 +26,11 @@ provider:
   runtime: nodejs12.x
   lambdaHashingVersion: 20201221
   environment:
-      INSTANCE_USERNAME:  ${file(./config/${opt:stage, 'dev'}.yml):INSTANCE_USERNAME}
-      INSTANCE_URL:  ${file(./config/${opt:stage, 'dev'}.yml):INSTANCE_URL}
-      INSTANCE_PASSWORD:  ${file(./config/${opt:stage, 'dev'}.yml):INSTANCE_PASSWORD}
-      INSTANCE_SCHEMA:  ${file(./config/${opt:stage, 'dev'}.yml):INSTANCE_SCHEMA}
-      SECRET:  ${file(./config/${opt:stage, 'dev'}.yml):SECRET}
+      INSTANCE_USERNAME:  ${file(./config/${opt:stage, 'dev_local'}.yml):INSTANCE_USERNAME}
+      INSTANCE_URL:  ${file(./config/${opt:stage, 'dev_local'}.yml):INSTANCE_URL}
+      INSTANCE_PASSWORD:  ${file(./config/${opt:stage, 'dev_local'}.yml):INSTANCE_PASSWORD}
+      INSTANCE_SCHEMA:  ${file(./config/${opt:stage, 'dev_local'}.yml):INSTANCE_SCHEMA}
+      SECRET:  ${file(./config/${opt:stage, 'dev_local'}.yml):SECRET}
 
 # you can overwrite defaults here
 #  stage: dev
@@ -78,6 +78,12 @@ functions:
     events:
       - httpApi:
           path: /createcustomer
+          method: put
+  createVehicle:
+    handler: handler.createVehicle
+    events:
+      - httpApi:
+          path: /createvehicle
           method: put
 
 #    The following are a few example events you can configure

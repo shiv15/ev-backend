@@ -25,7 +25,7 @@ module.exports = (db) => {
     Fuel: {
         type: DataTypes.TEXT
     },
-    "All Electric Range": {
+    "All-Electric Range": {
         type: DataTypes.INTEGER
     },
     "Alternative Fuel Economy City": {
