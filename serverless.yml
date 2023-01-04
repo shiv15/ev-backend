@@ -84,7 +84,19 @@ functions:
     events:
       - httpApi:
           path: /createvehicle
+          method: post
+  updateVehicle:
+    handler: handler.updateVehicle
+    events:
+      - httpApi:
+          path: /updatevehicle
           method: put
+  deleteVehicle:
+    handler: handler.deleteVehicle
+    events:
+      - httpApi:
+          path: /deletevehicle
+          method: delete
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
