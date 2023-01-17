@@ -11,3 +11,4 @@ dev_remote.yml
 .DS_Store
 launch.json
 .vscode
+config.json
