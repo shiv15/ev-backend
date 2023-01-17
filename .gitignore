@@ -5,8 +5,10 @@ jspm_packages
 
 # Serverless directories
 .serverless
+dev.yml
 dev_local.yml
 dev_remote.yml
 .DS_Store
 launch.json
 .vscode
+config.json

@@ -21,6 +21,9 @@ module.exports = (db) => {
         },
         premium: {
             type: DataTypes.TINYINT
+        },
+        roles: {
+            type: DataTypes.STRING
         }
-    });
+    }, { timestamps: true });
 }
