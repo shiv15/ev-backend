@@ -10,13 +10,15 @@
     "sequelize-auto": "^0.8.3"
   },
   "devDependencies": {
+    "jasmine": "^4.6.0",
     "sequelize-cli": "^6.2.0",
     "serverless-offline": "^7.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-offline": "sls offline"
+    "test": "jasmine",
+    "start": "sls offline"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }

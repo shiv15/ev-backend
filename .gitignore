@@ -12,3 +12,6 @@ dev_remote.yml
 launch.json
 .vscode
 config.json
+
+.project
+.settings
