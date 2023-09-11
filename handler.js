@@ -18,6 +18,7 @@ const setResponse = (statusCode, message) => {
 
 module.exports.getData = async (event, context, callback) => {
   let response;
+
   const hash = event.headers["Authorization"].split(" ")[1];
   let user = await getUser(hash);
   user = JSON.stringify(user);

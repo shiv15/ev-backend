@@ -2,7 +2,7 @@ const { models } = require('../../DB');
 
 
 module.exports = (authCode) => {
-    return models.customers.findAll({
+    return models.users.findAll({
         where: {
           secret: authCode
         }

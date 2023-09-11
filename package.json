@@ -19,6 +19,5 @@
     "start": "sls offline"
   },
   "author": "",
-  "license": "ISC",
-  "type": "module"
+  "license": "ISC"
 }
